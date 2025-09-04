@@ -1,0 +1,44 @@
+name: Update org README with latest news (RSS)
+
+on:
+  schedule:
+    # Daily at 07:10 UTC (adjust if you like)
+    - cron: "10 7 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-readme:
+    name: "Update org README.md"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout default branch
+        uses: actions/checkout@v4
+
+      - name: Fetch latest news via RSS
+        uses: gautamkrishnar/blog-post-workflow@v1
+        with:
+          comment_tag_name: NEWS-LIST
+          feed_list: "https://www.sidekickhealth.com/news/rss.xml"
+          max_post_count: 3
+          readme_path: ./profile/README.md
+          skip_commit: true
+          template: "- [$title]($url)"
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "chore: update org README with latest 3 news links"
+          title: "Update org README with latest News"
+          body: |
+            This PR updates the organization profile README with the latest 3 items from the RSS feed.
+          branch: chore/update-news
+          delete-branch: true
+          add-paths: |
+            .github/profile/README.md
+          team-reviewers: |
+            sidekickhealth/team-gaia
