@@ -27,7 +27,7 @@ jobs:
           max_post_count: 3
           readme_path: ./profile/README.md
           skip_commit: true
-          template: "- [$title]($url)"
+          template: "$newline - [$title]($url) $newline"
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7.0.8
