@@ -3,7 +3,9 @@
 Welcome to the Sidekick Health GitHub organization.
 
 - 🌐 Website: <https://www.sidekickhealth.com>
+
 - 📰 Sidebar: <https://www.sidekickhealth.com/news>
+
 - 💼 Careers: <https://www.sidekickhealth.com/careers>
 
 ### Latest news
