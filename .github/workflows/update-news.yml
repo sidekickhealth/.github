@@ -32,7 +32,7 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7.0.8
         with:
-          token: ${{ secrets.github_pat }}
+          token: ${{ secrets.PAT }}
           commit-message: "chore: update org README with latest 3 news links"
           title: "Update org README with latest News"
           body: |
