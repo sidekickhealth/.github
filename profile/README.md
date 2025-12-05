@@ -10,9 +10,9 @@ Welcome to the Sidekick Health GitHub organization.
 
 ### Latest news
 <!-- NEWS-LIST:START -->
+ - [Sidekick Health presents impactful real-world data from their digital oncology program at ASCO 2024](https://www.sidekickhealth.com/news/sidekick-health-presents-impactful-real-world-data-from-their-digital-oncology-program-at-asco-2024) 
+
  - [Where’s the Humanity in AI?](https://www.sidekickhealth.com/news/wheres-the-humanity-in-ai) 
 
  - [Exercise and Cancer Survival: Using Digital to Unlock Results at Scale](https://www.sidekickhealth.com/news/exercise-and-cancer-survival) 
-
- - [AI Is Not a Strategy, It’s a Shift](https://www.sidekickhealth.com/news/ai-is-not-a-strategy-its-a-shift) 
 <!-- NEWS-LIST:END -->
