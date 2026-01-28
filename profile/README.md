@@ -16,3 +16,4 @@ Welcome to the Sidekick Health GitHub organization.
 
  - [Exercise and Cancer Survival: Using Digital to Unlock Results at Scale](https://www.sidekickhealth.com/news/exercise-and-cancer-survival) 
 <!-- NEWS-LIST:END -->
+<!-- Manual commit to keep cron workflows running past 60 days of inactivity: 0 -->
